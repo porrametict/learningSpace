@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="content.css">
+
+    <title>sedemy</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            se'
+            <span>demy</span>
+        </div>
+        <nav id="navbar" class="">
+            <ul>
+                <li><a href="">HOME</a></li>
+                <li>
+                    <a href="">Course</a>
+                    <ul id="submenu">
+                        <li><a href="">HTML</a></li>
+                        <li><a href="">CSS</a></li>
+                        <li><a href="">Javascript</a></li>
+                    </ul>
+                </li>
+                <li><a href="">Services</a></li>
+                <li><a href="">Team</a></li>
+            </ul>
+        </nav>
+        <div class="menu" onclick="menuAvtive()">
+            <i class="fa fa-bars"></i>
+        </div>
+    </header>
+    <div class="container" id="container">
+        <div class="p1">
+                <h1>Lorem ipsum dolor sit.</h1>
+                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam a, excepturi deleniti sit exercitationem
+                    expedita
+                    commodi perferendis assumenda quo voluptas ipsam nihil cum dignissimos quia unde corporis, non eos atque.
+                    Quaerat, rerum temporibus magnam repudiandae totam fuga id vitae nihil?</p>
+        </div>
+        <div class="p2">
+            <img src="congrat.jpg" alt="">
+        </div>
+        
+
+    </div>
+
+    <footer>
+        <div id="fp-1">
+            <h1>se'demy</h1>
+        </div>
+        <div id="fp-2">
+            <h3>วิศวกรรมซอฟต์แวร์</h3>
+            <h3>คณะเทคโนโลยีสารสนเทศและการสื่อสาร</h3>
+            <h3>มหาวิทยาลัยพะเยา</h3>
+            <p>โทร 054 466 666 Ext 2297</p>
+        </div>
+        <div id="fp-3">
+            <h2>ไซต์อื่นๆ</h2>
+            <a href="http://admission.up.ac.th" target="_blank" rel="noopener noreferrer">งานรับเข้าศึกษา ม.พะเยา</a>
+            <a href="http://www.up.ac.th/" target="_blank" rel="noopener noreferrer">มหาวิทยาลัยพะเยา</a>
+            <a href="http://www.ict.up.ac.th/welcome/" target="_blank"
+                rel="noopener noreferrer">คณะเทคโนโลยีสารสนเทศและการสื่อสาร</a>
+
+        </div>
+
+        <div id="fp-4">
+            <div>
+                <p>Power By Porramet</p>
+            </div>
+
+        </div>
+
+    </footer>
+</body>
+
+</html>
+
+<script>
+    function menuAvtive() {
+        if (document.getElementById("navbar").classList.contains("active")) {
+            document.getElementById("navbar").classList.remove("active")
+            console.log("is active")
+        } else {
+            document.getElementById("navbar").classList.add("active")
+        }
+
+    };
+</script>
